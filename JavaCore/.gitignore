@@ -1,0 +1,7 @@
+
+### Không đẩy idea lên git ###
+.idea
+target
+
+### Mac OS ###
+.DS_Store
