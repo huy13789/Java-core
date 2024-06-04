@@ -10,13 +10,13 @@ public class ScannersDemo {
         System.out.println(" 1. Name \n 2. Nữ");
         int menu = scanner.nextInt();
         Gender gender;
-//        if(menu == 1){
-//            gender = Gender.MALE;
-//        }else {
-//            gender = Gender.FEMALE;
-//        }
-//        scanner.nextLine();
-        gender = Gender.valueOf(String.valueOf(menu));
+        if(menu == 1){
+            gender = Gender.MALE;
+        }else {
+            gender = Gender.FEMALE;
+        }
+        scanner.nextLine();
+        //gender = Gender.valueOf(String.valueOf(menu));
         System.out.println("Sex = " + gender);
     }
 }
