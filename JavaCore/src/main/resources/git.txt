@@ -9,3 +9,6 @@ git branch
 git checkout -b [branch name]
 git push -u origin [branch name]
 git pull -u origin [branch name]
+
+git remote add origin https://github.com/huy13789/Java-core.git
+git push origin --all
