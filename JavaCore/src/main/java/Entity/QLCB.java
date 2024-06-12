@@ -7,22 +7,22 @@ public class QLCB {
     private int soLuongCanBo;
 
     public QLCB() {
-        danhSachCanBo = new CanBo[10]; // Khởi tạo mảng với kích thước ban đầu là 10
+        danhSachCanBo = new CanBo[1];
         soLuongCanBo = 0;
     }
 
-    // a) Thêm mới cán bộ
+    //Thêm mới cán bộ
     public void themCanBo(CanBo canBo) {
         if (soLuongCanBo >= danhSachCanBo.length) {
-            // Tăng kích thước mảng nếu cần thiết
             CanBo[] newDanhSachCanBo = new CanBo[danhSachCanBo.length * 2];
             System.arraycopy(danhSachCanBo, 0, newDanhSachCanBo, 0, danhSachCanBo.length);
             danhSachCanBo = newDanhSachCanBo;
         }
+
         danhSachCanBo[soLuongCanBo++] = canBo;
     }
 
-    // b) Tìm kiếm theo họ tên
+    //Tìm kiếm theo họ tên
     public CanBo timKiemTheoHoTen(String hoTen) {
         for (int i = 0; i < soLuongCanBo; i++) {
             if (danhSachCanBo[i].getHoTen().equalsIgnoreCase(hoTen)) {
@@ -32,7 +32,7 @@ public class QLCB {
         return null;
     }
 
-    // c) Hiển thị thông tin về danh sách các cán bộ
+    //Hiển thị thông tin về danh sách các cán bộ
     public void hienThiDanhSach() {
         if (soLuongCanBo == 0) {
             System.out.println("Danh sách cán bộ trống.");
@@ -43,22 +43,21 @@ public class QLCB {
         }
     }
 
-    // d) Nhập vào tên của cán bộ và xóa cán bộ đó
+    //Nhập vào tên của cán bộ và xóa cán bộ đó
     public boolean xoaCanBo(String hoTen) {
         for (int i = 0; i < soLuongCanBo; i++) {
             if (danhSachCanBo[i].getHoTen().equalsIgnoreCase(hoTen)) {
-                // Xóa cán bộ bằng cách dịch các phần tử sau nó lên
                 for (int j = i; j < soLuongCanBo - 1; j++) {
                     danhSachCanBo[j] = danhSachCanBo[j + 1];
                 }
-                danhSachCanBo[--soLuongCanBo] = null; // Giảm số lượng cán bộ và đặt phần tử cuối là null
+                danhSachCanBo[--soLuongCanBo] = null;
                 return true;
             }
         }
         return false;
     }
 
-    // e) Thoát khỏi chương trình
+    //Thoát khỏi chương trình
     public void thoatChuongTrinh() {
         System.out.println("Thoát chương trình...");
         System.exit(0);
@@ -86,7 +85,8 @@ public class QLCB {
                     int tuoi = scanner.nextInt();
                     scanner.nextLine(); // consume newline
                     System.out.print("Nhập giới tính: ");
-                    String gioiTinh = scanner.nextLine();
+                    String gioiTinhStr = scanner.nextLine();
+                    GioiTinh gioiTinh = GioiTinh.valueOf(gioiTinhStr);
                     System.out.print("Nhập địa chỉ: ");
                     String diaChi = scanner.nextLine();
                     CanBo canBo = new CanBo(hoTen, tuoi, gioiTinh, diaChi);

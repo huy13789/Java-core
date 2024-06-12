@@ -1,5 +1,7 @@
 package Entity;
 
+import java.util.Objects;
+
 public class CanBo {
     private String hoTen;
     private int tuoi;
@@ -48,4 +50,26 @@ public class CanBo {
         this.diachi = diachi;
     }
 
+    @Override
+    public String toString() {
+        return "CanBo{" +
+                "hoTen='" + hoTen + '\'' +
+                ", tuoi=" + tuoi +
+                ", gioiTinh=" + gioiTinh +
+                ", diachi='" + diachi + '\'' +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof CanBo)) return false;
+        CanBo canBo = (CanBo) o;
+        return this.hoTen != null && this.hoTen.equalsIgnoreCase(canBo.hoTen);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(hoTen, tuoi, gioiTinh, diachi);
+    }
 }
