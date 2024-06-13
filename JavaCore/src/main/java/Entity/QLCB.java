@@ -19,7 +19,7 @@ public class QLCB {
             danhSachCanBo = newDanhSachCanBo;
         }
 
-        danhSachCanBo[soLuongCanBo++] = canBo;
+        danhSachCanBo[soLuongCanBo++] = canBo; // sao khi add thi so luong tang len 1
     }
 
     //Tìm kiếm theo họ tên
@@ -104,6 +104,7 @@ public class QLCB {
                     }
                     break;
                 case 3:
+                    System.out.println("danhSachCanBo[0] = " + danhSachCanBo[0]);
                     hienThiDanhSach();
                     break;
                 case 4:
