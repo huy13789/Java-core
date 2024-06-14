@@ -3,10 +3,10 @@ package Entity;
 import java.util.Objects;
 
 public class CanBo {
-    private String hoTen;
-    private int tuoi;
-    private GioiTinh gioiTinh;
-    private String diachi;
+    protected String hoTen;
+    protected int tuoi;
+    protected GioiTinh gioiTinh;
+    protected String diachi;
 
     public CanBo() {
     }
