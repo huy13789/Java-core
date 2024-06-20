@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="523b5725-0ba7-4a70-b71e-3cda7f7e16a5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/JavaCore.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaCore/src/main/java/File/FileDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaCore/src/main/java/File/FileDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaCore/src/main/resources/abc.txt" beforeDir="false" afterPath="$PROJECT_DIR$/JavaCore/src/main/resources/abc.txt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="lesson-06" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2hHLd252K0RGhwaWT1WMVDzWbwJ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.BreakDemo.executor": "Run",
+    "Application.ContructorDemo.executor": "Run",
+    "Application.DataTypeCastingDemo.executor": "Run",
+    "Application.DataTypeDemo.executor": "Run",
+    "Application.DoWhileDemo.executor": "Run",
+    "Application.Exercise04.executor": "Run",
+    "Application.FileDemo.executor": "Run",
+    "Application.ForEachDemo.executor": "Run",
+    "Application.IOStreamDemo.executor": "Run",
+    "Application.InherritanceDemo.executor": "Run",
+    "Application.ObjectMethodDemo.executor": "Run",
+    "Application.OutPutDemo.executor": "Run",
+    "Application.Polymophism.executor": "Run",
+    "Application.Program.executor": "Run",
+    "Application.RandomDemo.executor": "Run",
+    "Application.ScannersDemo.executor": "Run",
+    "Application.StaticDemo.executor": "Run",
+    "Application.StringDemo.executor": "Run",
+    "Application.StringMethodDemo.executor": "Run",
+    "Application.SwitchCaseDemo.executor": "Run",
+    "Application.TernaryDemo.executor": "Run",
+    "Application.WhileDemo.executor": "Run",
+    "Application.forIndexDemo.executor": "Run",
+    "Application.ifElseDemo.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "lesson-07",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/huy13/OneDrive/Desktop/VTI/JavaCore/JavaCore",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.IOStreamDemo">
+    <configuration name="IOStreamDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="IOStream.IOStreamDemo" />
+      <module name="JavaCore" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="IOStream.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InherritanceDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="inherritance.InherritanceDemo" />
+      <module name="JavaCore" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="inherritance.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Polymophism" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="polymophism.Polymophism" />
+      <module name="JavaCore" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="polymophism.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Program" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Entity.Program" />
+      <module name="JavaCore" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Entity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StaticDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="StaticDemo" />
+      <module name="JavaCore" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.IOStreamDemo" />
+        <item itemvalue="Application.StaticDemo" />
+        <item itemvalue="Application.Program" />
+        <item itemvalue="Application.Polymophism" />
+        <item itemvalue="Application.InherritanceDemo" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-1.8.0_402-azul-1.8.0_402-4caba194b151-32bb955f" />
+        <option value="jdk-21.0.1-openjdk-21.0.1-4caba194b151-23eed401" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="523b5725-0ba7-4a70-b71e-3cda7f7e16a5" name="Changes" comment="" />
+      <created>1717246140624</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1717246140624</updated>
+      <workItem from="1717246141639" duration="3184000" />
+      <workItem from="1717253400120" duration="828000" />
+      <workItem from="1717473253223" duration="1579000" />
+      <workItem from="1717492633553" duration="1352000" />
+      <workItem from="1717502845557" duration="10423000" />
+      <workItem from="1717523961129" duration="361000" />
+      <workItem from="1717524437683" duration="298000" />
+      <workItem from="1717582238621" duration="1044000" />
+      <workItem from="1717828094048" duration="824000" />
+      <workItem from="1717849739201" duration="8638000" />
+      <workItem from="1718108307485" duration="6499000" />
+      <workItem from="1718196592227" duration="4722000" />
+      <workItem from="1718282417825" duration="4785000" />
+      <workItem from="1718397513258" duration="665000" />
+      <workItem from="1718453136661" duration="269000" />
+      <workItem from="1718453418525" duration="2281000" />
+      <workItem from="1718700741322" duration="1215000" />
+      <workItem from="1718712618910" duration="8612000" />
+      <workItem from="1718884984970" duration="47000" />
+      <workItem from="1718885056429" duration="47000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/JavaCore" />
+    </ignored-roots>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
