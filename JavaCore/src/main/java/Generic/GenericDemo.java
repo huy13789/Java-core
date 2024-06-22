@@ -26,7 +26,9 @@ public class GenericDemo {
         System.out.println("max = " + max);
 
         // generic method
-
+        Printer.printAny(3);
+        Printer.printAny(5);
+        Printer.printAny("Huy");
 
         //Wildcard
 
