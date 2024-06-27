@@ -9,7 +9,7 @@ public class ScannerUtil {
                 .trim()
                 .replaceAll("\\s{2,}", "");
     }
-    public static int InputIne(){
+    public static int InputInt(){
         while (true){
             try {
                 String input = inputString();
