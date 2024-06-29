@@ -28,4 +28,8 @@ public class ScannerUtil {
     public static String InputEmail(){
         return inputString();
     }
+
+    public static String inputPassword() {
+        return inputString();
+    }
 }

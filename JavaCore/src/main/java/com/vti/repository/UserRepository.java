@@ -7,7 +7,8 @@ import java.sql.*;
 import java.util.LinkedList;
 import java.util.List;
 
-public class UserRepository {
+public class UserRepository implements IUserRepository {
+    @Override
     public List<User> findALl() throws SQLException {
         String sql = "SELECT * FROM users";
         try
@@ -29,6 +30,7 @@ public class UserRepository {
         }
     }
 
+    @Override
     public User findById(int id) throws SQLException {
         String sql = "SELECT * FROM users WHERE id = ?";
         try (
@@ -42,6 +44,7 @@ public class UserRepository {
         }
     }
 
+    @Override
     public int create(String fullName, String email) throws SQLException {
         String sql = "INSERT INTO users(full_name, email) VALUES (?,?)";
         try (Connection connection = JdbcUtil.getConnection();
@@ -53,6 +56,7 @@ public class UserRepository {
         }
     }
 
+    @Override
     public int deleteById(int id) throws SQLException {
         String sql = "DELETE FROM users WHERE id = ?";
         try (
@@ -64,6 +68,7 @@ public class UserRepository {
         }
     }
 
+    @Override
     public User findByEmailAndPassword(String email, String password) throws SQLException {
         String sql = "{CALL find_by_email_and_password(?, ?)}";
         try (
