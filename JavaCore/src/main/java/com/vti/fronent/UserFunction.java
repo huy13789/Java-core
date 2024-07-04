@@ -4,9 +4,6 @@ import com.vti.controller.UserController;
 import com.vti.entity.User;
 import com.vti.util.ScannerUtil;
 import lombok.AllArgsConstructor;
-
-import java.io.IOException;
-import java.sql.SQLException;
 import java.util.List;
 
 @AllArgsConstructor

@@ -14,9 +14,8 @@ public interface IUserRepository {
     List<User> findALl() throws SQLException, IOException;
 
     /**
-     * @param id
-     * @return
      * @throws SQLException nếu xảy ra lỗi SQL
+     * return User bằng id
      */
     User findById(int id) throws SQLException, IOException;
 

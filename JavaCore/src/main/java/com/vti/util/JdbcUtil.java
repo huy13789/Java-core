@@ -1,7 +1,6 @@
 package com.vti.util;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -21,6 +20,10 @@ public class JdbcUtil {
         }
     }
 
+
+    /**
+     * Check connection
+     */
     public static void checkConnection() {
         try (Connection connection = getConnection()) {
             System.out.println("Kết nối thành công: connection = " + connection);
