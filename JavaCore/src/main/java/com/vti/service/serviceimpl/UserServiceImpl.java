@@ -20,7 +20,7 @@ public class UserServiceImpl implements IUserService {
     public List<User> findALl() {
         try {
             return userRepository.findALl();
-        } catch (SQLException e) {
+        } catch (SQLException | IOException e) {
             return Collections.emptyList();
         }
     }
@@ -29,7 +29,7 @@ public class UserServiceImpl implements IUserService {
     public User findById(int id) {
         try {
             return userRepository.findById(id);
-        } catch (Exception e) {
+        } catch (SQLException | IOException e) {
             return null;
         }
     }
@@ -38,7 +38,7 @@ public class UserServiceImpl implements IUserService {
     public int create(String fullName, String email) {
         try {
             return userRepository.create(fullName, email);
-        } catch (Exception e) {
+        } catch (SQLException | IOException e) {
             return 0;
         }
     }
@@ -47,7 +47,7 @@ public class UserServiceImpl implements IUserService {
     public int deleteById(int id) {
         try {
             return userRepository.deleteById(id);
-        } catch (Exception e) {
+        } catch (SQLException | IOException e) {
             return 0;
         }
     }
@@ -56,7 +56,7 @@ public class UserServiceImpl implements IUserService {
     public User findByEmailAndPassword(String email, String password) {
         try {
             return userRepository.findByEmailAndPassword(email, password);
-        } catch (Exception e) {
+        } catch (SQLException | IOException e) {
             return null;
         }
     }

@@ -20,7 +20,7 @@ public class UserFunction {
             System.out.println("3. Tìm kiếm user theo id");
             System.out.println("4. Thoát chương trình");
             System.out.println("Mời bạn chọn chức năng:");
-            int menu = ScannerUtil.InputInt();
+            int menu = ScannerUtil.inputInt();
             if (menu == 1) {
                 findByEmailAndPassword();
             } else if (menu == 2) {
@@ -44,7 +44,7 @@ public class UserFunction {
             System.out.println("4. Xóa user theo id");
             System.out.println("5. Đăng xuất");
             System.out.println("Mời bạn chọn chức năng:");
-            int menu = ScannerUtil.InputInt();
+            int menu = ScannerUtil.inputInt();
             if (menu == 1) {
                 findAll();
             } else if (menu == 2) {
@@ -68,7 +68,7 @@ public class UserFunction {
             System.out.println("2. Tìm kiếm user theo id");
             System.out.println("3. Đăng xuất");
             System.out.println("Mời bạn chọn chức năng:");
-            int menu = ScannerUtil.InputInt();
+            int menu = ScannerUtil.inputInt();
             if (menu == 1) {
                 findAll();
             } else if (menu == 2) {
@@ -103,7 +103,7 @@ public class UserFunction {
 
     private void findById()  {
         System.out.println("Nhập vào id:");
-        int id = ScannerUtil.InputInt();
+        int id = ScannerUtil.inputInt();
         User user = userController.findById(id);
         System.out.println("+------+-------------------------+-------------------------+");
         System.out.printf("| %-4s | %-23s | %-23s |%n", "ID", "FULL NAME", "EMAIL");
@@ -122,7 +122,7 @@ public class UserFunction {
 
     private void findByEmailAndPassword()  {
         System.out.println("Nhập vào email:");
-        String email = ScannerUtil.InputEmail();
+        String email = ScannerUtil.inputEmail();
         System.out.println("Nhập vào password:");
         String password = ScannerUtil.inputPassword();
         User user = userController.findByEmailAndPassword(email, password);
@@ -145,16 +145,16 @@ public class UserFunction {
     private void create()  {
         System.out.println("Mời bạn nhập vào thông tin user.");
         System.out.println("Nhập vào full name:");
-        String fullName = ScannerUtil.InputFullName();
+        String fullName = ScannerUtil.inputFullName();
         System.out.println("Nhập vào email:");
-        String email = ScannerUtil.InputEmail();
+        String email = ScannerUtil.inputEmail();
         int result = userController.create(fullName, email);
         System.out.printf("Đã tạo thành công %d user.%n", result);
     }
 
     private void deleteById()  {
         System.out.println("Nhập vào id:");
-        int id = ScannerUtil.InputInt();
+        int id = ScannerUtil.inputInt();
         int result = userController.deleteById(id);
         System.out.printf("Đã xóa thành công %d user.%n", result);
     }

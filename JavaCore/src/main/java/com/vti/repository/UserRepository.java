@@ -3,19 +3,20 @@ package com.vti.repository;
 import com.vti.entity.User;
 import com.vti.util.JdbcUtil;
 
+import java.io.IOException;
 import java.sql.*;
 import java.util.LinkedList;
 import java.util.List;
 
 public class UserRepository implements IUserRepository {
     @Override
-    public List<User> findALl() throws SQLException {
+    public List<User> findALl() throws SQLException, IOException {
         String sql = "SELECT * FROM users";
         try
                 (
                         Connection connection = JdbcUtil.getConnection();
                         Statement statement = connection.createStatement();
-                        ResultSet rs = statement.executeQuery(sql);
+                        ResultSet rs = statement.executeQuery(sql)
 
                 ) {
             List<User> users = new LinkedList<>();
@@ -24,18 +25,15 @@ public class UserRepository implements IUserRepository {
                 users.add(user);
             }
             return users;
-        } catch (Exception e) {
-            System.out.println("e.getMessage() = " + e.getMessage());
-            return new LinkedList<>();
         }
     }
 
     @Override
-    public User findById(int id) throws SQLException {
+    public User findById(int id) throws SQLException, IOException {
         String sql = "SELECT * FROM users WHERE id = ?";
         try (
                 Connection connection = JdbcUtil.getConnection();
-                PreparedStatement preparedStatement = connection.prepareStatement(sql);
+                PreparedStatement preparedStatement = connection.prepareStatement(sql)
         ) {
             preparedStatement.setInt(1, id);
             try (ResultSet resultSet = preparedStatement.executeQuery()) {
@@ -45,10 +43,10 @@ public class UserRepository implements IUserRepository {
     }
 
     @Override
-    public int create(String fullName, String email) throws SQLException {
+    public int create(String fullName, String email) throws SQLException, IOException {
         String sql = "INSERT INTO users(full_name, email) VALUES (?,?)";
         try (Connection connection = JdbcUtil.getConnection();
-             PreparedStatement preparedStatement = connection.prepareStatement(sql);
+             PreparedStatement preparedStatement = connection.prepareStatement(sql)
         ) {
             preparedStatement.setString(1, fullName);
             preparedStatement.setString(2, email);
@@ -57,11 +55,11 @@ public class UserRepository implements IUserRepository {
     }
 
     @Override
-    public int deleteById(int id) throws SQLException {
+    public int deleteById(int id) throws SQLException, IOException {
         String sql = "DELETE FROM users WHERE id = ?";
         try (
                 Connection connection = JdbcUtil.getConnection();
-                PreparedStatement preparedStatement = connection.prepareStatement(sql);
+                PreparedStatement preparedStatement = connection.prepareStatement(sql)
         ) {
             preparedStatement.setInt(1, id);
             return preparedStatement.executeUpdate();
@@ -69,7 +67,7 @@ public class UserRepository implements IUserRepository {
     }
 
     @Override
-    public User findByEmailAndPassword(String email, String password) throws SQLException {
+    public User findByEmailAndPassword(String email, String password) throws SQLException, IOException {
         String sql = "{CALL find_by_email_and_password(?, ?)}";
         try (
                 Connection connection = JdbcUtil.getConnection();
