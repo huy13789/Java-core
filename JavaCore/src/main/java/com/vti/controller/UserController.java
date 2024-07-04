@@ -30,5 +30,4 @@ public class UserController {
         return iUserService.findByEmailAndPassword(email, password);
     }
 
-    ;
 }
