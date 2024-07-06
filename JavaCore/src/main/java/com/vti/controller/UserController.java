@@ -10,24 +10,17 @@ import java.util.List;
 public class UserController {
     private IUserService iUserService;
 
-    public List<User> findAll() {
-        return iUserService.findALl();
+    public List<User> findAllManager() {
+        return iUserService.findAllManager();
     }
 
-    public User findById(int id) {
-        return iUserService.findById(id);
+    public List<User> findEmployeeByProjectId(int projectId) {
+        return iUserService.findEmployeeByProjectId(projectId);
     }
 
-    public int create(String fullName, String email) {
-        return iUserService.create(fullName, email);
-    }
 
-    public int deleteById(int id) {
-        return iUserService.deleteById(id);
-    }
-
-    public User findByEmailAndPassword(String email, String password) {
-        return iUserService.findByEmailAndPassword(email, password);
+    public User findManagerByEmailAndPassword(String email, String password) {
+        return iUserService.findManagerByEmailAndPassword(email, password);
     }
 
 }

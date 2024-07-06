@@ -16,45 +16,28 @@ public class UserServiceImpl implements IUserService {
     private IUserRepository userRepository;
 
     @Override
-    public List<User> findALl() {
+    public List<User> findAllManager() {
         try {
-            return userRepository.findALl();
+            return userRepository.findAllManager();
         } catch (SQLException | IOException e) {
             return Collections.emptyList();
         }
     }
 
     @Override
-    public User findById(int id) {
+    public List<User> findEmployeeByProjectId(int id) {
         try {
-            return userRepository.findById(id);
+            return userRepository.findEmployeeByProjectId(id);
         } catch (SQLException | IOException e) {
             return null;
         }
     }
 
-    @Override
-    public int create(String fullName, String email) {
-        try {
-            return userRepository.create(fullName, email);
-        } catch (SQLException | IOException e) {
-            return 0;
-        }
-    }
 
     @Override
-    public int deleteById(int id) {
+    public User findManagerByEmailAndPassword(String email, String password) {
         try {
-            return userRepository.deleteById(id);
-        } catch (SQLException | IOException e) {
-            return 0;
-        }
-    }
-
-    @Override
-    public User findByEmailAndPassword(String email, String password) {
-        try {
-            return userRepository.findByEmailAndPassword(email, password);
+            return userRepository.findManagerByEmailAndPassword(email, password);
         } catch (SQLException | IOException e) {
             return null;
         }

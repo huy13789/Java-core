@@ -12,13 +12,14 @@ public class User {
     private String password;
     private Role role;
     private String proSkill;
+    private int projectId;
     private int expInYear;
 
     public void setRole(String role){
         this.role = Role.valueOf(role);
     }
     public enum Role{
-        ADMIN, EMPLOYEE
+        MANAGER, EMPLOYEE
     }
 
 }

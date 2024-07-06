@@ -23,30 +23,6 @@ public class ScannerUtil {
         }
     }
 
-    public static String inputFullName() {
-        while (true) {
-            String input = inputString();
-            if (hasAllAlphabetic(input)) {
-                return input;
-            } else {
-                System.err.println("Yêu cầu full name chỉ chứa chữ");
-                System.out.println("Nhập lại:");
-            }
-        }
-    }
-
-    private static boolean hasAllAlphabetic(String s) {
-        int length = s.length();
-        for (int i = 0; i < length; i++) {
-            char c = s.charAt(i);
-            if (Character.isWhitespace(c))
-                continue;
-            if (!Character.isAlphabetic(c))
-                return false;
-        }
-        return true;
-    }
-
     public static String inputEmail() {
         while (true) {
             String input = inputString();
@@ -66,23 +42,9 @@ public class ScannerUtil {
             if (length < 6 || length > 12) {
                 System.err.println("Yêu cầu password từ 6 tới 12 kí tự");
                 System.err.println("Nhập lại:");
-            } else if (hasAnyUppercase(input)) {
-                return input;
             } else {
-                System.err.println("Yêu cầu password có ít nhất 1 kí tự viết hoa");
-                System.err.println("Nhập lại:");
+                return input;
             }
         }
-    }
-
-    private static boolean hasAnyUppercase(String s) {
-        int length = s.length();
-        for (int i = 0; i < length; i++) {
-            char c = s.charAt(i);
-            if (Character.isUpperCase(c)) {
-                return true;
-            }
-        }
-        return false;
     }
 }
