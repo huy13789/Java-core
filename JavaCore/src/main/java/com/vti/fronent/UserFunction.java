@@ -94,7 +94,7 @@ public class UserFunction {
     }
 
     private void findEmployeeByProjectId() {
-        System.out.println("Nhập vào id:");
+        System.out.println("Nhập vào projectId:");
         int id = ScannerUtil.inputInt();
         List<User> users = userController.findEmployeeByProjectId(id);
         System.out.println("+------+-------------------------+-------------------------+");
