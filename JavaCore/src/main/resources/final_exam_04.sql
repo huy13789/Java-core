@@ -16,7 +16,9 @@ CREATE TABLE users (
 
 INSERT INTO users (full_name        , email              , password  , role		 , pro_skill, project_id ,exp_in_year)
 VALUES            ('Nguyễn Văn Khoa', 'khoa.nv@gmail.com', '123456Q' , 'EMPLOYEE', 'Java'   , 1		, NULL       ),
-				  ('Nguyễn Ngọc Duy', 'duy.nn@gmail.com' , '123456Q' , 'MANAGER'   , NULL    ,1		, 10         );
+				  ('Nguyễn Ngọc Duy', 'duy.nn@gmail.com' , '123456Q' , 'MANAGER'   , NULL    ,1		, 10         ),
+				  ('Nguyễn Ngọc Tùng', 'tung.nn@gmail.com' ,'123456Q' , 'EMPLOYEE'   , NULL    ,2		, 10     ),
+                  ('Ngô Nguyễn Huy', 'huy.nn@gmail.com' , '123456Q' , 'EMPLOYEE'   , NULL    ,1		, 10         );
 
 DROP PROCEDURE IF EXISTS find_manager_by_email_and_password;
 DELIMITER $$
